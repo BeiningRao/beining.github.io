@@ -1,7 +1,7 @@
 /* global Zotero, PathUtils, IOUtils */
 
 const PREF_BRANCH = "extensions.zotero-auto-ingest-organizer.";
-const VERSION = "0.2.1";
+const VERSION = "0.2.2";
 
 const DEFAULTS = {
   enabled: true,

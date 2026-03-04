@@ -111,10 +111,10 @@ git push -u origin work
 1. 打标签：
 
 ```bash
-git tag -a v0.2.1 -m "zotero auto ingest organizer v0.2.1"
-git push origin v0.2.1
+git tag -a v0.2.2 -m "zotero auto ingest organizer v0.2.2"
+git push origin v0.2.2
 ```
 
-2. 在 GitHub 仓库 `Releases` 页面创建 `v0.2.1`。
+2. 在 GitHub 仓库 `Releases` 页面创建 `v0.2.2`。
 3. 上传 `zotero-auto-ingest-organizer.xpi` 作为附件。
 
