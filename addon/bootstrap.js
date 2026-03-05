@@ -1,7 +1,7 @@
 /* global Zotero, PathUtils, IOUtils */
 
 const PREF_BRANCH = "extensions.zotero-auto-ingest-organizer.";
-const VERSION = "0.2.3";
+const VERSION = "0.2.4";
 
 const DEFAULTS = {
   enabled: true,
@@ -332,5 +332,7 @@ function escapeHtml(text) {
     .replace(/'/g, "&#39;");
 }
 
-window.startup = startup;
-window.shutdown = shutdown;
+if (typeof window !== "undefined") {
+  window.startup = startup;
+  window.shutdown = shutdown;
+}

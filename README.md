@@ -111,11 +111,11 @@ git push -u origin work
 1. 打标签：
 
 ```bash
-git tag -a v0.2.3 -m "zotero auto ingest organizer v0.2.3"
-git push origin v0.2.3
+git tag -a v0.2.4 -m "zotero auto ingest organizer v0.2.4"
+git push origin v0.2.4
 ```
 
-2. 在 GitHub 仓库 `Releases` 页面创建 `v0.2.3`。
+2. 在 GitHub 仓库 `Releases` 页面创建 `v0.2.4`。
 3. 上传 `zotero-auto-ingest-organizer.xpi` 作为附件。
 
 
@@ -131,3 +131,13 @@ tar -tf D:\code\beining.github.io\zotero-auto-ingest-organizer.xpi | Select-Obje
 ```
 
 若 `tar -tf` 里没有 `manifest.json` / `bootstrap.js`，说明打包目录不对（必须在 `addon` 目录里执行打包）。
+
+
+## 八、兼容性兜底（Zotero 8）
+
+本包已加入 `install.rdf`（bootstrap 扩展清单）以兼容 Zotero 传统插件安装路径。
+若你仍安装失败，请在 Zotero 的 `about:config` 中检查：
+
+- `xpinstall.signatures.required` 是否可设为 `false`（若存在该项）
+
+然后重启 Zotero 再安装。

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>zotero-auto-ingest-organizer@local</em:id>
+    <em:type>2</em:type>
+    <em:name>zotero-auto-ingest-organizer</em:name>
+    <em:version>0.2.4</em:version>
+    <em:description>自动导入下载文献并按标题和摘要分类，生成摘要笔记。</em:description>
+    <em:bootstrap>true</em:bootstrap>
+
+    <em:targetApplication>
+      <Description>
+        <em:id>zotero@chnm.gmu.edu</em:id>
+        <em:minVersion>7.0</em:minVersion>
+        <em:maxVersion>8.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
