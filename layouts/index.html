@@ -1,0 +1,49 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-mountains"></div>
+  <div class="hero-mist"></div>
+  <div class="hero-content">
+    <img class="hero-seal" src="{{ "img/seal.svg" | relURL }}" alt="饶倍宁印">
+    <h1 class="hero-title">{{ .Site.Params.description }}</h1>
+    <div class="hero-divider">
+      <span class="divider-dot">◆</span>
+    </div>
+    <p class="hero-motto">{{ .Site.Params.motto }}</p>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>▼</span>
+  </div>
+</section>
+
+<section class="modules">
+  <div class="section-heading">
+    <h2>踏 · 四方</h2>
+  </div>
+  <div class="module-grid">
+    <a href="{{ "resume/" | relURL }}" class="module-card">
+      <div class="card-brush"></div>
+      <div class="module-icon">履</div>
+      <h2>个人简历</h2>
+      <p>教育背景 · 工作经历 · 技能展示</p>
+    </a>
+    <a href="{{ "creative/" | relURL }}" class="module-card">
+      <div class="card-brush"></div>
+      <div class="module-icon">文</div>
+      <h2>文艺创作合集</h2>
+      <p>诗词 · 散文 · 随笔 · 创意</p>
+    </a>
+    <a href="{{ "research/" | relURL }}" class="module-card">
+      <div class="card-brush"></div>
+      <div class="module-icon">研</div>
+      <h2>科研笔记</h2>
+      <p>论文笔记 · 实验记录 · 学术思考</p>
+    </a>
+    <a href="{{ "courses/" | relURL }}" class="module-card">
+      <div class="card-brush"></div>
+      <div class="module-icon">学</div>
+      <h2>课程理论合集</h2>
+      <p>课程笔记 · 理论总结 · 知识梳理</p>
+    </a>
+  </div>
+</section>
+{{ end }}

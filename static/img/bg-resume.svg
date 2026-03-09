@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Snow gradient sky -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b8c6d0"/>
+      <stop offset="40%" stop-color="#d1dbe3"/>
+      <stop offset="100%" stop-color="#e8eef2"/>
+    </linearGradient>
+    <!-- Lake water -->
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8ba4b5"/>
+      <stop offset="100%" stop-color="#6b8a9e"/>
+    </linearGradient>
+    <!-- Mist -->
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <!-- Snow filter -->
+    <filter id="snow-noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" seed="2"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 0.8"/>
+      </feComponentTransfer>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0"/>
+      <feComposite in2="SourceGraphic" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1440" height="500" fill="url(#sky)"/>
+
+  <!-- Distant mountains faded -->
+  <g filter="url(#blur)" opacity="0.3">
+    <path d="M0,260 Q120,180 240,220 Q360,140 480,200 Q600,120 720,190 Q840,100 960,180 Q1080,130 1200,200 Q1320,150 1440,220 L1440,300 L0,300Z" fill="#8a9ca8"/>
+  </g>
+
+  <!-- Mid snow-capped hills -->
+  <g opacity="0.5">
+    <path d="M0,280 Q100,230 200,260 Q300,200 420,250 Q500,190 600,240 Q720,170 840,230 Q960,190 1080,240 Q1200,200 1320,250 L1440,260 L1440,320 L0,320Z" fill="#c5cfd8"/>
+    <!-- Snow caps -->
+    <path d="M300,200 Q340,190 380,210 Q360,195 340,200Z" fill="#eef2f5" opacity="0.8"/>
+    <path d="M500,190 Q540,175 580,200 Q560,180 540,185Z" fill="#eef2f5" opacity="0.8"/>
+    <path d="M720,170 Q760,155 800,180 Q780,160 760,165Z" fill="#eef2f5" opacity="0.8"/>
+    <path d="M1080,200 Q1120,185 1160,210 Q1140,190 1120,195Z" fill="#eef2f5" opacity="0.7"/>
+  </g>
+
+  <!-- Near shore snow bank -->
+  <path d="M0,310 Q200,295 400,305 Q600,290 800,305 Q1000,292 1200,305 Q1350,298 1440,310 L1440,320 L0,320Z" fill="#e0e8ed"/>
+
+  <!-- Lake -->
+  <rect y="320" width="1440" height="180" fill="url(#lake)"/>
+
+  <!-- Reflections in water -->
+  <g opacity="0.15" filter="url(#blur2)">
+    <path d="M0,340 Q200,360 400,345 Q600,370 800,350 Q1000,365 1200,345 Q1350,355 1440,340 L1440,500 L0,500Z" fill="#c5cfd8" transform="scale(1,-0.4) translate(0,-1100)"/>
+  </g>
+
+  <!-- Water ripples -->
+  <g stroke="#a0b8c8" fill="none" stroke-width="0.5" opacity="0.3">
+    <path d="M100,360 Q200,356 300,360 Q400,364 500,360"/>
+    <path d="M400,390 Q500,386 600,390 Q700,394 800,390"/>
+    <path d="M200,420 Q350,416 500,420 Q650,424 800,420"/>
+    <path d="M600,450 Q750,446 900,450 Q1050,454 1200,450"/>
+    <path d="M0,380 Q100,376 200,380"/>
+    <path d="M900,370 Q1050,366 1200,370 Q1300,374 1440,370"/>
+    <path d="M100,440 Q250,436 400,440"/>
+    <path d="M800,460 Q950,456 1100,460 Q1250,464 1440,460"/>
+  </g>
+
+  <!-- Lone tree silhouette on shore -->
+  <g transform="translate(350,270)" opacity="0.35">
+    <line x1="0" y1="0" x2="0" y2="50" stroke="#5a6a74" stroke-width="2"/>
+    <path d="M0,0 Q-15,-20 -8,-30 Q-2,-25 0,-8" stroke="#5a6a74" stroke-width="1.2" fill="none"/>
+    <path d="M0,5 Q10,-15 6,-28 Q2,-18 0,0" stroke="#5a6a74" stroke-width="1.2" fill="none"/>
+    <path d="M0,10 Q-12,-5 -10,-18" stroke="#5a6a74" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Another bare tree -->
+  <g transform="translate(1050,278)" opacity="0.25">
+    <line x1="0" y1="0" x2="0" y2="42" stroke="#5a6a74" stroke-width="1.5"/>
+    <path d="M0,2 Q-10,-12 -6,-22" stroke="#5a6a74" stroke-width="1" fill="none"/>
+    <path d="M0,6 Q8,-8 5,-20" stroke="#5a6a74" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Pavilion silhouette -->
+  <g transform="translate(700,276)" opacity="0.2">
+    <path d="M-20,0 L0,-16 L20,0" stroke="#5a6a74" stroke-width="1.5" fill="none"/>
+    <line x1="-16" y1="0" x2="-16" y2="30" stroke="#5a6a74" stroke-width="1.2"/>
+    <line x1="16" y1="0" x2="16" y2="30" stroke="#5a6a74" stroke-width="1.2"/>
+  </g>
+
+  <!-- Falling snow overlay -->
+  <g opacity="0.5">
+    <circle cx="100" cy="50" r="2" fill="#fff"/>
+    <circle cx="280" cy="120" r="1.5" fill="#fff"/>
+    <circle cx="450" cy="30" r="2.5" fill="#fff"/>
+    <circle cx="600" cy="90" r="1.8" fill="#fff"/>
+    <circle cx="750" cy="160" r="2" fill="#fff"/>
+    <circle cx="900" cy="40" r="1.5" fill="#fff"/>
+    <circle cx="1100" cy="110" r="2.2" fill="#fff"/>
+    <circle cx="1300" cy="70" r="1.8" fill="#fff"/>
+    <circle cx="200" cy="200" r="1.5" fill="#fff"/>
+    <circle cx="500" cy="250" r="2" fill="#fff"/>
+    <circle cx="800" cy="220" r="1.5" fill="#fff"/>
+    <circle cx="1050" cy="195" r="2" fill="#fff"/>
+    <circle cx="1250" cy="240" r="1.8" fill="#fff"/>
+    <circle cx="150" cy="140" r="1.2" fill="#fff"/>
+    <circle cx="350" cy="180" r="1.8" fill="#fff"/>
+    <circle cx="680" cy="60" r="1.3" fill="#fff"/>
+    <circle cx="950" cy="270" r="1.5" fill="#fff"/>
+    <circle cx="1200" cy="150" r="2" fill="#fff"/>
+    <circle cx="50" cy="280" r="1.3" fill="#fff"/>
+    <circle cx="1400" cy="200" r="1.6" fill="#fff"/>
+  </g>
+
+  <!-- Overlay mist layer -->
+  <rect y="300" width="1440" height="40" fill="#e8eef2" opacity="0.3" filter="url(#blur)"/>
+</svg>

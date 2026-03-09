@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ $sectionName := replaceRE "^.*/([^/]+)/?$" "$1" .RelPermalink }}
+{{ $bgMap := dict "resume" "bg-resume.svg" "creative" "bg-creative.svg" "research" "bg-research.svg" "courses" "bg-courses.svg" }}
+{{ $bgFile := index $bgMap $sectionName }}
+
+{{ if $bgFile }}
+<div class="section-hero section-hero--{{ $sectionName }}" style="background-image: url('{{ (printf "img/%s" $bgFile) | relURL }}');">
+  <div class="section-hero__overlay"></div>
+  <div class="section-hero__content">
+    <h1>{{ .Title }}</h1>
+  </div>
+</div>
+{{ end }}
+
+<section class="section-page">
+  {{ if not $bgFile }}<h1>{{ .Title }}</h1>{{ end }}
+  <div class="section-description">
+    {{ .Content }}
+  </div>
+
+  {{ $pages := .Pages }}
+  {{ if gt (len $pages) 0 }}
+  <ul class="post-list">
+    {{ range $pages }}
+    <li class="post-item">
+      <a href="{{ .Permalink }}">
+        <h3>{{ .Title }}</h3>
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+        {{ if .Description }}<p>{{ .Description }}</p>{{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p class="empty-hint">暂无内容，敬请期待...</p>
+  {{ end }}
+</section>
+{{ end }}

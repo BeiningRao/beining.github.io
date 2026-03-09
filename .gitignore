@@ -1,0 +1,21 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Zotero plugin files (not part of the website)
+*.xpi
+addon/
+build_*.py
+check_bom.py
+compare_xpi.py
+repack_test.py
+test_python.py

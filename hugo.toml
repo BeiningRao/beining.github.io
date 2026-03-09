@@ -1,0 +1,71 @@
+baseURL = 'https://beiningrao.github.io/'
+title = "Beining's Space"
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = true
+
+[params]
+  author = 'Beining'
+
+[languages]
+  [languages.zh]
+    languageCode = 'zh-cn'
+    languageName = '中文'
+    weight = 1
+    contentDir = 'content/zh'
+    [languages.zh.params]
+      motto = '徜徉恣意，岂必有为；若其天放，如是得之'
+      description = '赠君一觚金错刀，请君为我倾耳听'
+    [[languages.zh.menu.main]]
+      name = '首页'
+      url = '/'
+      weight = 1
+    [[languages.zh.menu.main]]
+      name = '个人简历'
+      url = '/resume/'
+      weight = 2
+    [[languages.zh.menu.main]]
+      name = '文艺创作'
+      url = '/creative/'
+      weight = 3
+    [[languages.zh.menu.main]]
+      name = '科研笔记'
+      url = '/research/'
+      weight = 4
+    [[languages.zh.menu.main]]
+      name = '课程理论'
+      url = '/courses/'
+      weight = 5
+
+  [languages.en]
+    languageCode = 'en-us'
+    languageName = 'English'
+    weight = 2
+    contentDir = 'content/en'
+    [languages.en.params]
+      motto = 'Wander freely, why must there be purpose; let nature take its course, thus shall you find it'
+      description = "I gift you a golden blade — lend me your ear and listen"
+    [[languages.en.menu.main]]
+      name = 'Home'
+      url = '/'
+      weight = 1
+    [[languages.en.menu.main]]
+      name = 'Resume'
+      url = '/resume/'
+      weight = 2
+    [[languages.en.menu.main]]
+      name = 'Creative Works'
+      url = '/creative/'
+      weight = 3
+    [[languages.en.menu.main]]
+      name = 'Research Notes'
+      url = '/research/'
+      weight = 4
+    [[languages.en.menu.main]]
+      name = 'Course Notes'
+      url = '/courses/'
+      weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

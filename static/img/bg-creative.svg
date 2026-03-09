@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="parchment-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8dcc8"/>
+      <stop offset="100%" stop-color="#d4c4a8"/>
+    </linearGradient>
+    <filter id="aged">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" seed="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.08"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+  </defs>
+
+  <!-- Aged parchment background -->
+  <rect width="1440" height="500" fill="url(#parchment-bg)"/>
+
+  <!-- Paper texture -->
+  <rect width="1440" height="500" filter="url(#aged)" opacity="0.5"/>
+
+  <!-- 祭侄文稿 style calligraphy strokes - large scattered brush characters -->
+  <!-- Row 1: Emotional bold strokes mimicking Yan Zhenqing's style -->
+  <g opacity="0.08" fill="#1a1008">
+    <!-- Character-like brush strokes scattered across -->
+    <!-- 维 style -->
+    <g transform="translate(80,60)">
+      <path d="M0,0 L2,60 Q4,70 8,60 L10,0" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M-5,20 L15,20" stroke="#1a1008" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M-5,40 L15,40" stroke="#1a1008" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M20,5 L22,55" stroke="#1a1008" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M25,0 Q35,30 25,60" stroke="#1a1008" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M30,15 L42,15" stroke="#1a1008" stroke-width="4" fill="none"/>
+      <path d="M30,35 L42,35" stroke="#1a1008" stroke-width="4" fill="none"/>
+    </g>
+
+    <!-- 乾 style -->
+    <g transform="translate(200,50)">
+      <path d="M10,0 L10,70" stroke="#1a1008" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M0,10 L22,10" stroke="#1a1008" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M0,35 L22,35" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M28,5 Q38,35 28,65" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M22,55 Q30,60 38,55" stroke="#1a1008" stroke-width="4" fill="none"/>
+    </g>
+
+    <!-- 元 style -->
+    <g transform="translate(340,55)">
+      <path d="M0,8 L40,8" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M5,8 L5,50 Q8,60 15,55" stroke="#1a1008" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M30,8 L30,45 Q35,60 42,50" stroke="#1a1008" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M0,30 L40,30" stroke="#1a1008" stroke-width="4" fill="none"/>
+    </g>
+
+    <!-- 年 style -->
+    <g transform="translate(480,45)">
+      <path d="M0,15 L35,15" stroke="#1a1008" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M0,30 L35,30" stroke="#1a1008" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M0,45 L35,45" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M18,0 L18,70" stroke="#1a1008" stroke-width="7" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Row 2 -->
+    <!-- 歲 style -->
+    <g transform="translate(620,60)">
+      <path d="M15,0 L15,65" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M0,10 L30,10" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M5,25 Q15,20 25,25" stroke="#1a1008" stroke-width="4" fill="none"/>
+      <path d="M0,40 L30,40" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M5,55 Q15,48 25,55" stroke="#1a1008" stroke-width="4" fill="none"/>
+      <path d="M35,5 Q45,30 38,60" stroke="#1a1008" stroke-width="5" fill="none"/>
+    </g>
+
+    <!-- Large emotional strokes - mimicking the passionate sections -->
+    <g transform="translate(780,40)">
+      <path d="M0,0 Q5,40 0,80" stroke="#1a1008" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M-8,20 L12,20" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M-8,50 L12,50" stroke="#1a1008" stroke-width="6" fill="none"/>
+      <path d="M18,5 L18,75" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M18,40 L35,40" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M35,10 Q42,45 35,75" stroke="#1a1008" stroke-width="5" fill="none"/>
+    </g>
+
+    <!-- 賊 style - heavy emotional strokes -->
+    <g transform="translate(920,50)">
+      <path d="M5,0 L5,70" stroke="#1a1008" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M-5,0 L18,0" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M-5,25 L18,25" stroke="#1a1008" stroke-width="6" fill="none"/>
+      <path d="M-5,50 L18,50" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M22,10 Q30,5 38,10 L38,60 Q30,65 22,60Z" stroke="#1a1008" stroke-width="4" fill="none"/>
+      <path d="M25,35 L36,35" stroke="#1a1008" stroke-width="3" fill="none"/>
+    </g>
+
+    <!-- More scattered strokes across the bottom -->
+    <g transform="translate(1080,55)">
+      <path d="M0,5 L35,5" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M18,5 L18,65" stroke="#1a1008" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M0,30 L35,30" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M5,65 Q18,58 30,65" stroke="#1a1008" stroke-width="5" fill="none"/>
+    </g>
+
+    <g transform="translate(1240,45)">
+      <path d="M0,10 Q15,0 30,10" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M15,10 L15,75" stroke="#1a1008" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M0,35 L30,35" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M0,55 L30,55" stroke="#1a1008" stroke-width="6" fill="none"/>
+    </g>
+
+    <!-- Second row of characters - lower -->
+    <g transform="translate(120,200)">
+      <path d="M0,5 L40,5" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M20,5 L20,60 Q25,70 30,60" stroke="#1a1008" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M5,30 L35,30" stroke="#1a1008" stroke-width="5" fill="none"/>
+    </g>
+
+    <g transform="translate(280,190)">
+      <path d="M0,10 L0,65" stroke="#1a1008" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M0,10 L35,10" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M0,38 L35,38" stroke="#1a1008" stroke-width="6" fill="none"/>
+      <path d="M35,10 L35,65" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M10,65 L25,65" stroke="#1a1008" stroke-width="5" fill="none"/>
+    </g>
+
+    <!-- Ink splatter effects — emotional chaos of 祭侄文稿 -->
+    <g transform="translate(500,220)">
+      <path d="M0,0 Q20,20 5,50 Q-10,30 0,0" stroke="#1a1008" stroke-width="3" fill="#1a1008" opacity="0.5"/>
+    </g>
+    <g transform="translate(850,200)">
+      <path d="M0,15 L30,0 L35,40 L5,30Z" stroke="#1a1008" stroke-width="2" fill="#1a1008" opacity="0.3"/>
+    </g>
+
+    <!-- More characters bottom area -->
+    <g transform="translate(600,300)">
+      <path d="M5,0 L5,55" stroke="#1a1008" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M-5,15 L18,15" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M-8,40 L20,40" stroke="#1a1008" stroke-width="6" fill="none"/>
+      <path d="M25,5 Q35,30 25,55" stroke="#1a1008" stroke-width="5" fill="none"/>
+    </g>
+
+    <g transform="translate(780,310)">
+      <path d="M0,0 L40,0" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M20,0 L20,50" stroke="#1a1008" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M0,25 L40,25" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M5,50 L35,50" stroke="#1a1008" stroke-width="6" fill="none"/>
+    </g>
+
+    <g transform="translate(1000,295)">
+      <path d="M10,0 Q0,30 10,60" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M10,0 Q22,30 10,60" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M0,30 L25,30" stroke="#1a1008" stroke-width="4" fill="none"/>
+    </g>
+
+    <g transform="translate(1200,300)">
+      <path d="M0,0 L0,55" stroke="#1a1008" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M0,0 L30,0" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M0,28 L30,28" stroke="#1a1008" stroke-width="5" fill="none"/>
+      <path d="M30,0 L30,55" stroke="#1a1008" stroke-width="6" fill="none"/>
+      <path d="M15,55 Q20,45 25,55" stroke="#1a1008" stroke-width="3" fill="none"/>
+    </g>
+
+    <!-- Bottom scattered characters -->
+    <g transform="translate(200,380)">
+      <path d="M15,0 L0,50" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M15,0 L30,50" stroke="#1a1008" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M0,25 L30,25" stroke="#1a1008" stroke-width="5" fill="none"/>
+    </g>
+
+    <g transform="translate(400,390)">
+      <path d="M0,5 L35,5" stroke="#1a1008" stroke-width="6" fill="none"/>
+      <path d="M18,5 L18,55 Q22,65 28,55" stroke="#1a1008" stroke-width="7" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Seal stamps scattered -->
+  <g opacity="0.06">
+    <rect x="1300" y="380" width="45" height="45" rx="2" stroke="#c23a2e" fill="none" stroke-width="2.5"/>
+    <rect x="1305" y="385" width="35" height="35" rx="1" stroke="#c23a2e" fill="none" stroke-width="1"/>
+
+    <rect x="60" y="400" width="35" height="35" rx="2" stroke="#c23a2e" fill="none" stroke-width="2"/>
+    <rect x="64" y="404" width="27" height="27" rx="1" stroke="#c23a2e" fill="none" stroke-width="0.8"/>
+  </g>
+
+  <!-- Grid lines like manuscript paper -->
+  <g stroke="#8a7a60" stroke-width="0.3" opacity="0.06">
+    <line x1="160" y1="0" x2="160" y2="500"/>
+    <line x1="280" y1="0" x2="280" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="520" y1="0" x2="520" y2="500"/>
+    <line x1="640" y1="0" x2="640" y2="500"/>
+    <line x1="760" y1="0" x2="760" y2="500"/>
+    <line x1="880" y1="0" x2="880" y2="500"/>
+    <line x1="1000" y1="0" x2="1000" y2="500"/>
+    <line x1="1120" y1="0" x2="1120" y2="500"/>
+    <line x1="1240" y1="0" x2="1240" y2="500"/>
+  </g>
+</svg>

@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="deep-space" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#0f1528"/>
+      <stop offset="100%" stop-color="#080c18"/>
+    </linearGradient>
+    <radialGradient id="glow-blue" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#4a90d9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4a90d9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-orange" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#e8a040" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#e8a040" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-green" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#40d880" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#40d880" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="particle-glow">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- Deep space background -->
+  <rect width="1440" height="500" fill="url(#deep-space)"/>
+
+  <!-- Star field -->
+  <g fill="#fff">
+    <circle cx="50" cy="30" r="0.8" opacity="0.6"/>
+    <circle cx="120" cy="80" r="0.5" opacity="0.4"/>
+    <circle cx="200" cy="15" r="1" opacity="0.7"/>
+    <circle cx="340" cy="60" r="0.6" opacity="0.5"/>
+    <circle cx="420" cy="120" r="0.8" opacity="0.6"/>
+    <circle cx="560" cy="45" r="0.5" opacity="0.4"/>
+    <circle cx="680" cy="90" r="0.7" opacity="0.5"/>
+    <circle cx="800" cy="20" r="0.9" opacity="0.7"/>
+    <circle cx="920" cy="70" r="0.5" opacity="0.4"/>
+    <circle cx="1050" cy="40" r="0.8" opacity="0.6"/>
+    <circle cx="1150" cy="100" r="0.6" opacity="0.5"/>
+    <circle cx="1280" cy="55" r="0.7" opacity="0.5"/>
+    <circle cx="1380" cy="85" r="0.5" opacity="0.4"/>
+    <circle cx="80" cy="400" r="0.6" opacity="0.4"/>
+    <circle cx="300" cy="450" r="0.8" opacity="0.5"/>
+    <circle cx="500" cy="420" r="0.5" opacity="0.3"/>
+    <circle cx="700" cy="470" r="0.7" opacity="0.4"/>
+    <circle cx="1000" cy="430" r="0.6" opacity="0.5"/>
+    <circle cx="1200" cy="460" r="0.8" opacity="0.4"/>
+    <circle cx="1400" cy="440" r="0.5" opacity="0.3"/>
+  </g>
+
+  <!-- Particle collision event - center -->
+  <g transform="translate(720,250)">
+    <!-- Central vertex glow -->
+    <circle cx="0" cy="0" r="60" fill="url(#glow-blue)" filter="url(#soft-glow)"/>
+    <circle cx="0" cy="0" r="4" fill="#8ac4ff" opacity="0.9"/>
+    <circle cx="0" cy="0" r="8" fill="#4a90d9" opacity="0.3"/>
+
+    <!-- Particle tracks radiating out - curved paths like bubble chamber -->
+    <!-- Charged particle spirals -->
+    <path d="M0,0 Q30,-80 80,-120 Q100,-140 90,-170" stroke="#4a90d9" stroke-width="1.2" fill="none" opacity="0.7"/>
+    <path d="M0,0 Q-20,-60 -50,-100 Q-70,-130 -60,-180" stroke="#e8a040" stroke-width="1" fill="none" opacity="0.6"/>
+    <path d="M0,0 Q50,-40 100,-60 Q140,-70 180,-55" stroke="#40d880" stroke-width="1.3" fill="none" opacity="0.6"/>
+    <path d="M0,0 Q-40,-30 -90,-45 Q-130,-50 -180,-30" stroke="#d94a6a" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M0,0 Q20,50 50,90 Q70,120 110,140" stroke="#4a90d9" stroke-width="1.1" fill="none" opacity="0.6"/>
+    <path d="M0,0 Q-30,60 -70,100 Q-95,130 -130,125" stroke="#e8a040" stroke-width="1.2" fill="none" opacity="0.5"/>
+    <path d="M0,0 Q60,30 110,55 Q150,70 200,60" stroke="#9060d8" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M0,0 Q-60,20 -120,40 Q-160,45 -210,30" stroke="#40d880" stroke-width="0.8" fill="none" opacity="0.4"/>
+
+    <!-- Neutrino tracks - dashed (weakly interacting) -->
+    <path d="M0,0 L120,-200" stroke="#6aa0e0" stroke-width="0.8" fill="none" opacity="0.4" stroke-dasharray="4,6"/>
+    <path d="M0,0 L-100,-190" stroke="#6aa0e0" stroke-width="0.8" fill="none" opacity="0.3" stroke-dasharray="4,6"/>
+    <path d="M0,0 L150,180" stroke="#6aa0e0" stroke-width="0.8" fill="none" opacity="0.35" stroke-dasharray="4,6"/>
+
+    <!-- Spiral tracks (electrons in magnetic field) -->
+    <path d="M0,0 Q10,-10 8,-22 Q4,-30 10,-40 Q16,-48 12,-60 Q6,-70 12,-82 Q18,-90 14,-102" stroke="#ff6a8a" stroke-width="0.8" fill="none" opacity="0.5"/>
+    <path d="M0,0 Q-8,12 -4,24 Q2,34 -4,46 Q-10,56 -4,68 Q2,78 -4,90" stroke="#ff6a8a" stroke-width="0.7" fill="none" opacity="0.4"/>
+
+    <!-- Secondary vertices -->
+    <circle cx="80" cy="-120" r="2" fill="#e8a040" opacity="0.6"/>
+    <path d="M80,-120 L120,-160" stroke="#e8a040" stroke-width="0.8" fill="none" opacity="0.4"/>
+    <path d="M80,-120 L100,-180" stroke="#40d880" stroke-width="0.7" fill="none" opacity="0.3"/>
+
+    <circle cx="-70" cy="100" r="2" fill="#d94a6a" opacity="0.5"/>
+    <path d="M-70,100 L-110,140" stroke="#d94a6a" stroke-width="0.7" fill="none" opacity="0.3"/>
+    <path d="M-70,100 L-40,150" stroke="#9060d8" stroke-width="0.7" fill="none" opacity="0.3"/>
+  </g>
+
+  <!-- Detector rings (like a cross-section of a particle detector) -->
+  <g transform="translate(720,250)" stroke-width="0.5" fill="none" opacity="0.12">
+    <circle cx="0" cy="0" r="100" stroke="#4a90d9"/>
+    <circle cx="0" cy="0" r="140" stroke="#4a90d9"/>
+    <circle cx="0" cy="0" r="190" stroke="#3a7ab8" stroke-dasharray="2,4"/>
+    <circle cx="0" cy="0" r="230" stroke="#2a5a88" stroke-dasharray="3,5"/>
+  </g>
+
+  <!-- Nuclear physics - fission/fusion diagram (left side) -->
+  <g transform="translate(200,180)" opacity="0.25">
+    <!-- Nucleus -->
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#e8a040" stroke-width="1"/>
+    <circle cx="-6" cy="-4" r="5" fill="#e8a040" opacity="0.5"/>
+    <circle cx="5" cy="-6" r="4.5" fill="#d94a6a" opacity="0.5"/>
+    <circle cx="-3" cy="6" r="5" fill="#d94a6a" opacity="0.4"/>
+    <circle cx="7" cy="5" r="4" fill="#e8a040" opacity="0.4"/>
+    <circle cx="0" cy="-2" r="3.5" fill="#d94a6a" opacity="0.3"/>
+    <!-- Fission products -->
+    <path d="M20,0 Q40,-20 60,-30" stroke="#e8a040" stroke-width="1" fill="none"/>
+    <circle cx="65" cy="-33" r="10" fill="none" stroke="#e8a040" stroke-width="0.8"/>
+    <path d="M20,0 Q40,20 60,30" stroke="#d94a6a" stroke-width="1" fill="none"/>
+    <circle cx="65" cy="33" r="12" fill="none" stroke="#d94a6a" stroke-width="0.8"/>
+    <!-- Released neutrons -->
+    <circle cx="45" cy="-45" r="2" fill="#4a90d9" opacity="0.6"/>
+    <circle cx="50" cy="50" r="2" fill="#4a90d9" opacity="0.5"/>
+    <path d="M22,-5 L45,-45" stroke="#4a90d9" stroke-width="0.6" fill="none" stroke-dasharray="2,3"/>
+    <path d="M22,5 L50,50" stroke="#4a90d9" stroke-width="0.6" fill="none" stroke-dasharray="2,3"/>
+  </g>
+
+  <!-- Feynman diagram elements (right side) -->
+  <g transform="translate(1150,160)" opacity="0.2">
+    <!-- Fermion lines -->
+    <line x1="0" y1="0" x2="60" y2="40" stroke="#4a90d9" stroke-width="1.2"/>
+    <line x1="0" y1="80" x2="60" y2="40" stroke="#4a90d9" stroke-width="1.2"/>
+    <line x1="60" y1="40" x2="140" y2="40" stroke="#4a90d9" stroke-width="1.2"/>
+    <line x1="140" y1="40" x2="200" y2="0" stroke="#e8a040" stroke-width="1.2"/>
+    <line x1="140" y1="40" x2="200" y2="80" stroke="#e8a040" stroke-width="1.2"/>
+    <!-- Wavy boson line -->
+    <path d="M60,40 Q70,30 80,40 Q90,50 100,40 Q110,30 120,40 Q130,50 140,40" stroke="#40d880" stroke-width="1" fill="none"/>
+    <!-- Vertex dots -->
+    <circle cx="60" cy="40" r="3" fill="#fff" opacity="0.6"/>
+    <circle cx="140" cy="40" r="3" fill="#fff" opacity="0.6"/>
+    <!-- Labels -->
+    <text x="-8" y="-4" fill="#4a90d9" font-size="10" opacity="0.8" font-family="serif">ν</text>
+    <text x="-8" y="92" fill="#4a90d9" font-size="10" opacity="0.8" font-family="serif">e⁻</text>
+    <text x="202" y="-4" fill="#e8a040" font-size="10" opacity="0.8" font-family="serif">ν</text>
+    <text x="202" y="92" fill="#e8a040" font-size="10" opacity="0.8" font-family="serif">e⁻</text>
+    <text x="90" y="30" fill="#40d880" font-size="9" opacity="0.7" font-family="serif">W±</text>
+  </g>
+
+  <!-- Energy level diagram (bottom left) -->
+  <g transform="translate(100,350)" opacity="0.15">
+    <line x1="0" y1="0" x2="80" y2="0" stroke="#9060d8" stroke-width="1"/>
+    <line x1="0" y1="30" x2="80" y2="30" stroke="#9060d8" stroke-width="1"/>
+    <line x1="0" y1="55" x2="80" y2="55" stroke="#9060d8" stroke-width="1"/>
+    <line x1="0" y1="90" x2="80" y2="90" stroke="#9060d8" stroke-width="1"/>
+    <!-- Transition arrows -->
+    <path d="M60,30 L60,2" stroke="#ff6a8a" stroke-width="0.8" fill="none" marker-end="url(#arrow)"/>
+    <path d="M40,55 L40,32" stroke="#4a90d9" stroke-width="0.8" fill="none"/>
+    <text x="85" y="4" fill="#9060d8" font-size="8" opacity="0.8" font-family="monospace">n=4</text>
+    <text x="85" y="34" fill="#9060d8" font-size="8" opacity="0.8" font-family="monospace">n=3</text>
+    <text x="85" y="59" fill="#9060d8" font-size="8" opacity="0.8" font-family="monospace">n=2</text>
+    <text x="85" y="94" fill="#9060d8" font-size="8" opacity="0.8" font-family="monospace">n=1</text>
+  </g>
+
+  <!-- Subtle grid overlay -->
+  <g stroke="#1a3060" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="250" x2="1440" y2="250"/>
+    <line x1="720" y1="0" x2="720" y2="500"/>
+  </g>
+</svg>
